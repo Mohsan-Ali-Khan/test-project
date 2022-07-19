@@ -1,0 +1,26 @@
+.signupMainWrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  justify-content: center;
+  width: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.inputField {
+  outline: none;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
+  font: inherit;
+  padding: 6px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: block;
+  width: 80%;
+  box-sizing: border-box;
+}

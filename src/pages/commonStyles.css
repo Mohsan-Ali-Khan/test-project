@@ -1,0 +1,19 @@
+.ContinueButton {
+  margin: 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #5c9210;
+}
+
+.cancelButton {
+  margin: 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #944317;
+}

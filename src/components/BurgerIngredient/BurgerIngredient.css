@@ -1,0 +1,28 @@
+.cheese {
+  height: 4.5%;
+  margin: 2% auto !important;
+  background: linear-gradient(#f4d004, #d6bb22);
+  border-radius: 20px;
+}
+
+.meat {
+  height: 20px;
+  background: #98503b;
+  border-radius: 5px;
+  border-radius: 10px;
+}
+
+.lettuce {
+  border-left: 1px;
+  border-right: 1px;
+  height: 7%;
+  margin: 2% auto !important;
+  background: linear-gradient(#228c1d, #91ce50);
+  border-radius: 20px;
+}
+
+.bacon {
+  height: 3%;
+  background: linear-gradient(#bf3813, #c45e38);
+  margin: 2% auto !important;
+}
