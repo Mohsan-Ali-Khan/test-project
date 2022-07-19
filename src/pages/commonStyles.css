@@ -17,3 +17,15 @@
   cursor: pointer;
   color: #944317;
 }
+
+.OrderCompleteWrapper {
+  height: -webkit-fill-available;
+}
+
+.OrderCompleteButtonsWrapper {
+  margin-top: -50px;
+}
+
+.OrderCompleteContactForm {
+  margin-bottom: 5%;
+}

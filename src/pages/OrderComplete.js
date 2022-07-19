@@ -11,28 +11,23 @@ function OrderComplete() {
 
   return (
     <>
-<div>
-      <h1>We hope it tastes well!</h1>
-
-<Burger />
-
-      <div>
-
-        <button className="cancelButton" onClick={() => navigate("/home")}>
-          Cancel
-        </button>
-        <button
-          className=" ContinueButton"
-          onClick={() => setHidden((s) => !s)}
-        >
-          Continue
-        </button>
-
-
-      </div>
-
-      {!hidden ? <ContactForm /> : null}
-
+      <div className="OrderCompleteWrapper">
+        <h1>We hope it tastes well!</h1>
+        <Burger />
+        <div className="OrderCompleteButtonsWrapper">
+          <button className="cancelButton" onClick={() => navigate("/home")}>
+            Cancel
+          </button>
+          <button
+            className=" ContinueButton"
+            onClick={() => setHidden((s) => !s)}
+          >
+            Continue
+          </button>
+        </div>
+        <div className="OrderCompleteContactForm">
+          {!hidden ? <ContactForm /> : null}
+        </div>
       </div>
     </>
   );
