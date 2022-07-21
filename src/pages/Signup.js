@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useUserAuth } from "../../context/UserAuthContext";
 import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
+import { useUserAuth } from "../context/UserAuthContext";
+import { App_Routes } from "../constants/Routes";
 
 import "./commonStyles.css";
 
@@ -18,7 +19,7 @@ const Signup = () => {
     setError("");
     try {
       await signUp(email, password);
-      navigate("/");
+      navigate(`${App_Routes.LOGIN}`);
     } catch (err) {
       setError(err.message);
     }

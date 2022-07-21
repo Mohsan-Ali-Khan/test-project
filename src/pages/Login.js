@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useUserAuth } from "../../context/UserAuthContext";
 import { Form, Alert } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
 import "./commonStyles.css";
+import { useUserAuth } from "../context/UserAuthContext";
+import { App_Routes } from "../constants/Routes";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -18,7 +19,7 @@ const Login = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/home");
+      navigate(`${App_Routes.HOME}`);
     } catch (err) {
       setError(err.message);
     }

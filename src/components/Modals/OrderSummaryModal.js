@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { HamburgerContext } from "../context/HamburgerContext";
+import { HamburgerContext } from "../../context/HamburgerContext";
+import { App_Routes } from "../../constants/Routes";
 
 import "./OrderSummaryModal.css";
 
@@ -53,7 +54,9 @@ function OrderSummaryModal({ setOpenModal }) {
           >
             Cancel
           </button>
-          <button onClick={() => navigate("/order-completed")}>Continue</button>
+          <button onClick={() => navigate(`${App_Routes.ORDER_COMPLETED}`)}>
+            Continue
+          </button>
         </div>
       </div>
     </div>

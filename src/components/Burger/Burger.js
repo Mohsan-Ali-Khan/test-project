@@ -10,8 +10,8 @@ const Burger = () => {
   return (
     <div className="burgerWrapper">
       <div className="breadTop">
-        <div className="seeds"></div>
-        <div className="seeds2"></div>
+        <div className="seeds"/>
+        <div className="seeds2"/>
       </div>
       {selectedIngredients.length !== 0 ? (
         selectedIngredients.map((item) => {

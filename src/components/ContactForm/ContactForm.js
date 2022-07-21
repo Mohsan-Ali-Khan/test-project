@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 import { useNavigate } from "react-router-dom";
 import { validateContactForm } from "../../utils/validationSchema";
+import { App_Routes } from "../../constants/Routes";
 import { TextField } from "./TextField";
 
 import "./ContactForm.css";
@@ -35,7 +36,7 @@ export const ContactForm = () => {
             <button
               className="OrderButton"
               type="submit"
-              onClick={() => navigate("/home")}
+              onClick={() => navigate(`${App_Routes.HOME}`)}
             >
               Order
             </button>

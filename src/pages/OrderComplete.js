@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { App_Routes } from "../constants/Routes";
 import Burger from "../components/Burger/Burger";
 import { ContactForm } from "../components/ContactForm/ContactForm";
 
@@ -15,7 +16,10 @@ function OrderComplete() {
         <h1>We hope it tastes well!</h1>
         <Burger />
         <div className="OrderCompleteButtonsWrapper">
-          <button className="cancelButton" onClick={() => navigate("/home")}>
+          <button
+            className="cancelButton"
+            onClick={() => navigate(`${App_Routes.HOME}`)}
+          >
             Cancel
           </button>
           <button
